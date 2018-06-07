@@ -2,7 +2,7 @@ package com.ideal.block.model.blockDetails;
 
 import com.ideal.block.type.BlockType;
 
-public class IndexModel extends BlockModel{
+public class IndexModel extends AbstractBlockModel{
     private  int index;
     private  KeyModel keyModel;
 

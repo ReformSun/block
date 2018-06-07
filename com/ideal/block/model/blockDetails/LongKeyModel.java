@@ -2,7 +2,7 @@ package com.ideal.block.model.blockDetails;
 
 import com.ideal.block.type.BlockType;
 
-public class LongKeyModel extends BlockModel implements KeyModel{
+public class LongKeyModel extends AbstractBlockModel implements KeyModel{
     private String key;
 
     public LongKeyModel(String key) {
@@ -10,6 +10,7 @@ public class LongKeyModel extends BlockModel implements KeyModel{
         this.setBlockType(BlockType.LONGKEY);
     }
 
+    @Override
     public String getKey() {
         return key;
     }

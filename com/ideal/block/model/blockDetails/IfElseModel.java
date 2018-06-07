@@ -5,7 +5,7 @@ import com.ideal.block.type.BlockType;
 import java.util.ArrayList;
 import java.util.List;
 
-public class IfElseModel extends BlockModel {
+public class IfElseModel extends AbstractBlockModel {
     private List<ConditionsModel> judgeConditions;
     private List<String> logicalOperators;
 

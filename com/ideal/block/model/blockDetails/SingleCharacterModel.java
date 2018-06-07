@@ -2,7 +2,7 @@ package com.ideal.block.model.blockDetails;
 
 import com.ideal.block.type.BlockType;
 
-public class SingleCharacterModel extends BlockModel{
+public class SingleCharacterModel extends AbstractBlockModel{
     private String singleCharacter;
     private boolean isRegular;
     private KeyModel keyModel;

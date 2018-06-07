@@ -5,10 +5,10 @@ import java.util.Map;
 
 public class StreamModel {
     private String key;
-    private Map<String,String> map;
+    private Map<String,Object> map;
 
 
-    public boolean add(String key,String value){
+    public boolean add(String key,Object value){
         if (map == null){
             this.map = new HashMap<>();
         }
@@ -19,15 +19,15 @@ public class StreamModel {
     }
 
 
-    public Map<String, String> getMap() {
+    public Map<String, Object> getMap() {
         return map;
     }
 
-    public void setMap(Map<String, String> map) {
+    public void setMap(Map<String, Object> map) {
         this.map = map;
     }
 
-    public String getValue(String key){
+    public Object getValue(String key){
         if (this.map != null){
             return this.map.get(key);
         }

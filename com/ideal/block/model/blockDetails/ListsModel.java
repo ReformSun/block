@@ -5,7 +5,7 @@ import com.ideal.block.type.BlockType;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListsModel extends BlockModel{
+public class ListsModel extends AbstractBlockModel{
     private int items;
     private List<BlockModel> blockModelList;
 

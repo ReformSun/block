@@ -1,17 +1,8 @@
 package com.ideal.block.model.blockDetails;
 
 import com.ideal.block.type.BlockType;
+public  interface BlockModel{
+    public BlockType getBlockType();
 
-import java.io.Serializable;
-
-public abstract class BlockModel implements Serializable{
-    private BlockType blockType;
-
-    public BlockType getBlockType() {
-        return blockType;
-    }
-
-    public void setBlockType(BlockType blockType) {
-        this.blockType = blockType;
-    }
+    public void setBlockType(BlockType blockType);
 }

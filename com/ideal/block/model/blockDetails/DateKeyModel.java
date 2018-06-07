@@ -2,7 +2,7 @@ package com.ideal.block.model.blockDetails;
 
 import com.ideal.block.type.BlockType;
 
-public class DateKeyModel extends BlockModel implements KeyModel{
+public class DateKeyModel extends AbstractBlockModel implements KeyModel{
     private String key;
     private String dateType;
 
@@ -10,9 +10,11 @@ public class DateKeyModel extends BlockModel implements KeyModel{
         this.setBlockType(BlockType.DATEKEY);
     }
 
+    @Override
     public String getKey() {
         return key;
     }
+
 
     public void setKey(String key) {
         this.key = key;

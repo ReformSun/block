@@ -1,10 +1,7 @@
 package com.ideal.block.model.gsonDes;
 
 import com.google.gson.*;
-import com.ideal.block.model.blockDetails.BlockModel;
-import com.ideal.block.model.blockDetails.IndexModel;
-import com.ideal.block.model.blockDetails.KeyModel;
-import com.ideal.block.model.blockDetails.ListsModel;
+import com.ideal.block.model.blockDetails.*;
 
 
 import java.lang.reflect.Type;
@@ -13,7 +10,9 @@ import java.util.Iterator;
 public class BlockModelDes implements JsonDeserializer<BlockModel> {
     @Override
     public BlockModel deserialize(JsonElement jsonElement, Type type, JsonDeserializationContext jsonDeserializationContext) throws JsonParseException {
-        if (jsonElement.getAsJsonObject().get("blockType").getAsString().equals("LISTS_CREATE_WITH")){
+
+        if (jsonElement.getAsJsonObject().get("blockType").getAsString().equals
+                ("LISTS_CREATE_WITH")){
             ListsModel listsModel = new ListsModel(jsonElement.getAsJsonObject().get("items").getAsInt());
             JsonArray s = jsonElement.getAsJsonObject().get("blockModelList").getAsJsonArray();
             Iterator<JsonElement> iterator = s.iterator();
