@@ -30,7 +30,7 @@ public class SingleCharacterCutterOne implements FlatMapFunction<String,StreamMo
             if (modelMap == null){
                 modelMap = new HashMap<>();
                 BlockModel blockModel = singleCharacterModel.getBlockModel();
-                if (blockModel.getBlockType() == BlockType.lISTS_CREATE_WITH){
+                if (blockModel.getBlockType() == BlockType.LISTS_CREATE_WITH){
                     ListsModel listsModel = (ListsModel)blockModel;
                     List<BlockModel> lists = listsModel.getBlockModelList();
                     Iterator<BlockModel> iterator = lists.iterator();
